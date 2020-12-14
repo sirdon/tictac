@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Game from './components/Game';
+// import Grid from './Grid';
+// function App(props) {
+//   const [positions, setPositions] = React.useState(new Array(9).fill(null))
+//   return (
+//     <Grid positions={positions} 
+//       setPositions ={index =>{
+//         setPositions(prevPositions=>{
+//           const positions = prevPositions.slice()
+//           positions[index] = 'X'
+//           return positions
+//         })
+//       }}
+//     />
+//   );
+// }
+function App(props){
+  return(
+    <Game></Game>
+  )
 }
 
 export default App;
